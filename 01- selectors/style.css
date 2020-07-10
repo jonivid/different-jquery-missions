@@ -1,0 +1,28 @@
+.redDiv {
+  border: solid black 1px;
+  width: 400px;
+  height: 200px;
+  background-color: red;
+  margin: 10px;
+  display: inline-block;
+}
+
+.blueDiv {
+  border: solid black 1px;
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+  margin: 10px;
+  display: inline-block;
+}
+
+#fadeBtn {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-left: 500px;
+}
+
+#container {
+  margin-left: 120px;
+}
