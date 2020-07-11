@@ -1,5 +1,7 @@
 const input = $("#inputValue1");
 const target1 = $("#target1");
+const input2 = $("#inputValue2");
+const target2 = $("#target2");
 $("#copyBtn1").on("click", () => {
 
 
@@ -8,21 +10,28 @@ $("#copyBtn1").on("click", () => {
     target1.append(newP)
     function _getListItem(value) {
         const cls = 'list-group-item'
-        const listItem = $('<p></p>').text(value).addClass(cls)
-        // .append(_getCloneButton())
+        const listItem = $('<p></p>').text(value)
         return listItem
-        // function _getCloneButton() {
-        //     return $("<button></button>").text("Clone").addClass("btn btn-danger").css("float", "right").on("click", cloneMe)
-        // }
-    }
 
-
-    function cloneMe() {
-        $(this).parent().clone(true).appendTo(target1)
     }
 
     input.remove()
+});
+$("#copyBtn2").on("click", () => {
+    target2.empty();
+    const newP = _getListItem(input2.val())
+    target2.append(newP)
+    function _getListItem(value) {
+        const cls = 'list-group-item'
+        const listItem = $('<p></p>').text(value)
+        return listItem
+
+    }
+    input2.remove()
+
+
 })
+
 
 
 
